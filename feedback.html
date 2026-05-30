@@ -44,7 +44,8 @@
     <h2>FEEDBACK</h2>
     <p>Please write your feedback on the form below. Include your experience while using this website, the difficulties and what you think we can improve. Thank You ;)</p>
 
-    <form action="https://formspree.io/f/xpqbgebg" method="post" id="contactForm" class="more">
+    <!-- Main Feedback Form: Updated action to link directly to your email -->
+    <form action="mailto:molefinyanetrish@gmail.com" method="post" enctype="text/plain" id="contactForm" class="more">
       <div class="form-group">
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" placeholder="Write your name" required>
@@ -87,7 +88,8 @@
   <div class="modal-content-wrapper">
     <span id="closeRegister" class="close-modal">&times;</span>
     <h2>NeuroTech Robotics Registration</h2>
-    <form action="https://formspree.io/f/xpqbgebg" method="post">
+    <!-- Registration pop-up form: Updated action to link directly to your email -->
+    <form action="mailto:molefinyanetrish@gmail.com" method="post" enctype="text/plain">
       <label>Full Name</label>
       <input type="text" name="fullname" placeholder="Write your name" required>
       <label>Email</label>
@@ -116,13 +118,6 @@
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
-      </select>
-      <label>Payment Method</label>
-      <select name="payment_method">
-        <option value="none">None</option>
-        <option value="paytocell">PayToCell</option>
-        <option value="ewallet">eWallet</option>
-        <option value="duela">Duela Easy</option>
       </select>
       <div class="mt-3">
         <button class="submission btn btn-info" type="submit">Submit</button>
