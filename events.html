@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>NeuroTech Robotics — Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+<header class="navbar navbar-expand-lg navbar-dark" style="background-image:url('BCO.e7195cef-ce55-492d-8159-1a3218c9212f.png'); padding: 15px;">
+  <div class="container-fluid">
+    <img class="logo" src="BCO.03f7e8b6-4741-4c21-8ac9-8d787a278490.png" alt="NeuroTech Robotics logo" />
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <nav class="navbar-nav me-auto gap-2 p-2">
+        <a class="nav-link text-white" href="index.html">Home</a>
+        <a class="nav-link text-white" href="aboutUs.html">About</a>
+        <a class="nav-link text-white" href="projects.html">Projects</a>
+        <a class="nav-link text-white" href="events.html">Events</a>
+        <a class="nav-link text-white" href="feedback.html">Feedback</a>
+      </nav>
+      
+      <div class="d-flex flex-wrap gap-2 align-items-center">
+        <form id="searchForm" class="d-flex gap-1">
+          <input type="search" name="Q" placeholder="Search..." class="form-control form-control-sm">
+          <input type="submit" value="Search" class="btn btn-sm btn-light">
+        </form>
+        <button class="sign-btn" id="openSignIn">Sign In</button>
+        <button class="register-btn" id="openRegister">Register Now</button>
+      </div>
+    </div>
+  </div>
+</header>
+    
+<main>
+  <h1><b>"WIRED FOR INNOVATION, DRIVEN BY PURPOSE"</b></h1>
+
+  <article class="intro">
+    <h2>Events & Workshops</h2>
+    <p>Upcoming workshops, competitions and outreach events. Each listing shows what attendees will gain and who is hosting.</p>
+				
+    <div class="container">
+      <div class="div">
+        <p><b>Time of event:</b> 10 May 2026</p>
+        <h3>Introduction to Robotics Workshop</h3>
+        <img class="img-in" src="hands on.png" alt="Introduction to Robotics Workshop image"/>
+        <p><b>Track:</b> Educational</p>
+        <p><b>Who is hosting:</b> NeuroTech Robotics in partnership with local secondary schools.</p>
+        <p><b>What attendees will gain:</b> Hands‑on experience with microcontrollers (Arduino), basic sensors, and a guided build of a simple line‑following robot. Attendees leave with a starter kit checklist and lesson plan to continue learning.</p>
+      </div>
+				
+      <div class="div">
+        <p><b>Time of event:</b> 20 June 2026</p>
+        <h3>Agritech Hackathon</h3>
+        <img class="img-in" src="download.webp" alt="Agritech Hackathon image"/>
+        <p><b>Track:</b> Agricultural</p>
+        <p><b>Who is hosting:</b> NeuroTech Robotics with mentorship from AgriTech partners and university researchers.</p>
+        <p><b>What attendees will gain:</b> Rapid prototyping skills, exposure to NDVI sensing and IoT telemetry, team experience in pitching solutions to smallholder farming problems, and potential pilot opportunities with local farms.</p>
+      </div>
+				
+      <div class="div">
+        <p><b>Time of event:</b> 15 August 2026</p> 
+        <h3>Healthcare Robotics Seminar</h3>
+        <img class="img-in" src="download (1).webp" alt="Healthcare Robotics Seminar image"/>
+        <p><b>Track:</b> Medicinal</p>
+        <p><b>Who is hosting:</b> NeuroTech Robotics with guest speakers from healthcare NGOs and biomedical engineering departments.</p>
+        <p><b>What attendees will gain:</b> Understanding of assistive robotics use cases, design constraints for low‑resource clinics, and a roadmap for building telepresence and rehabilitation prototypes suitable for local clinics.</p>
+      </div>
+				
+      <div class="div">    
+        <p><b>Time of event:</b> 05 September 2026</p>
+        <h3>Industrial Automation Lab</h3>
+        <img class="img-in" src="industrial.webp" alt="Industrial Automation Lab image"/>
+        <p><b>Track:</b> Industrial</p>
+        <p><b>Who is hosting:</b> NeuroTech Robotics with industry partners and technical trainers.</p>
+        <p><b>What attendees will gain:</b> Practical exposure to PLC basics, motor control, and a SCARA arm demo. Participants will learn safety practices, basic ladder logic concepts and how to prototype simple automation flows.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="footer_">
+    <p><b>CONTACT US AT:</b><br>
+    Instagram: @NeuroTech_Robotics.25 | Facebook: @NeuroTech_Robotics.25<br>
+    Email: NeuroTech_Robotics@gmail.com | Phone: +267 71 010 020 / +267 73 030 040<br>
+    Location: Plot 6523, Gaborone</p>
+  </div>
+</footer>
+
+<div id="registerModal" class="custom-modal">
+  <div class="modal-content-wrapper">
+    <span id="closeRegister" class="close-modal">&times;</span>
+    <h2>NeuroTech Robotics Registration</h2>
+    <form action="https://formspree.io/f/xpqbgebg" method="post">
+      <label>Full Name</label>
+      <input type="text" name="fullname" placeholder="Write your name" required>
+      <label>Email</label>
+      <input type="email" name="email" required>
+      <label>Age</label>
+      <input type="number" name="age" placeholder="Write your age">
+      <label>Guardian's Full Name</label>
+      <input type="text" name="guardian">
+      <label>Password</label>
+      <input type="password" name="password" required>
+      <label>Confirm Password</label>
+      <input type="password" name="confirm_password" required>
+	
+      <label>Robotics Category</label>
+      <select name="category">
+        <option value="none">None</option>
+        <option value="industrial">Industrial Robotics</option>
+        <option value="educational">Educational Robotics</option>
+        <option value="medicinal">Medicinal Robotics</option>
+        <option value="service">Service Robotics</option>
+        <option value="agricultural">Agricultural Robotics</option>
+      </select>
+	
+      <label>Gender</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label>Payment Method</label>
+      <select name="payment_method">
+        <option value="none">None</option>
+        <option value="paytocell">PayToCell</option>
+        <option value="ewallet">eWallet</option>
+        <option value="duela">Duela Easy</option>
+      </select>
+      <div class="mt-3">
+        <button class="submission btn btn-info" type="submit">Submit</button>
+        <button class="submission btn btn-secondary" type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="signInModal" class="custom-modal">
+  <div class="modal-content-wrapper">
+    <span id="closeSignIn" class="close-modal">&times;</span>
+    <h2>NeuroTech Robotics Sign In</h2>
+    <form>
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <div class="mt-3">
+        <button class="submission btn btn-info" type="submit">Sign In</button>
+        <button class="submission btn btn-secondary" type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  const btnRegister = document.getElementById("openRegister");
+  const modalRegister = document.getElementById("registerModal");
+  const closeRegister = document.getElementById("closeRegister");
+  btnRegister.onclick = () => modalRegister.style.display = "block";
+  closeRegister.onclick = () => modalRegister.style.display = "none";
+
+  const btnSignIn = document.getElementById("openSignIn");
+  const modalSignIn = document.getElementById("signInModal");
+  const closeSignIn = document.getElementById("closeSignIn");
+  btnSignIn.onclick = () => modalSignIn.style.display = "block";
+  closeSignIn.onclick = () => modalSignIn.style.display = "none";
+
+  window.onclick = (event) => {
+    if (event.target == modalRegister) modalRegister.style.display = "none";
+    if (event.target == modalSignIn) modalSignIn.style.display = "none";
+  }
+
+  const searchForm = document.getElementById("searchForm");
+  searchForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const query = this.Q.value.trim();
+    if(query) { alert("Searching for: " + query); }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
